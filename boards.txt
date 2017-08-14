@@ -1,0 +1,43 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+
+menu.board_part_num=Board part number
+
+menu.Other_serial=Other serial instance
+menu.USB_interface=USB interface
+
+menu.upload_method=Upload method
+
+
+################################################################################
+# Edubot boards
+
+BennyBot.name=BennyBot
+
+BennyBot.build.vid=0x0483
+BennyBot.build.pid=0x5711
+BennyBot.vid.0=0x0483
+BennyBot.pid.0=0x5711
+
+BennyBot.build.core=STM32:arduino
+BennyBot.build.board=BennyBot
+BennyBot.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.enable_Serialx}
+
+
+# Upload menu
+BennyBot.menu.upload_method.DFUMethod=DFU USB
+BennyBot.menu.upload_method.DFUMethod.upload.protocol=DFU
+BennyBot.menu.upload_method.DFUMethod.upload.tool=dfu_upload
+
+# EDUBOT Board
+# Support: Serial1 (USART1 on PA3, PA2)
+BennyBot.menu.board_part_num.NUCLEO_F030R8=EDUBOT F042x6
+BennyBot.menu.board_part_num.NUCLEO_F030R8.node="NODE_F042P6,EDUBOT"
+BennyBot.menu.board_part_num.NUCLEO_F030R8.upload.maximum_size=32768
+BennyBot.menu.board_part_num.NUCLEO_F030R8.upload.maximum_data_size=4096
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.mcu=cortex-m0
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.f_cpu=48000000L
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.board=NUCLEO_F030R8
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.series=STM32F0xx
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.product_line=STM32F042x6
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.variant=EDUBOT
+BennyBot.menu.board_part_num.NUCLEO_F030R8.build.cmsis_lib_gcc=arm_cortexM0l_math

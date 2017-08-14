@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Get the directory where the script is running.
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+DFU_UTIL=/usr/bin/dfu-util
+DFUCONV_UTIL=${DIR}/dfucmd
+
+"${DFUCONV_UTIL}" $1 $2
+
+if [ ! -x "${DFU_UTIL}" ]; then
+    echo "$0: error: cannot find ${DFU_UTIL}" >&2
+    exit 2
+fi
+
+"${DFU_UTIL}" -a 0 -D $2
