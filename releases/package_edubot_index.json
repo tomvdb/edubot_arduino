@@ -1,0 +1,80 @@
+{
+  "packages": [
+	
+    {
+      "name": "edubot",
+      "maintainer": "Tom Van den Bon",
+      "websiteURL": "https://www.bennybot.co.za",
+      "email": "tvdbon@gmail.com",
+      "help": {
+        "online": "http://www.bennybot.co.za"
+      },
+      "platforms": [
+      {
+          "name": "Edubot Boards",
+          "architecture": "stm32",
+          "version": "1.0.3",
+          "category": "Contributed",
+          "help": {
+            "online": "http://www.bennybot.co.za"
+          },
+          "url": "https://www.bennybot.co.za/files/edubot-1.0.3.zip",
+          "archiveFileName": "edubot-1.0.3.zip",
+          "boards": [
+            {"name": "BennyBot"}
+          ],
+          "toolsDependencies": [
+	   {
+              "version": "6-2017-q1-update",
+              "name": "arm-none-eabi-gcc",
+              "packager": "STM32"
+            },
+            {
+              "version": "2017.7.13",
+              "name": "STM32Tools",
+              "packager": "STM32"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            }
+          ]
+        },
+        {
+          "name": "Edubot Boards",
+          "architecture": "stm32",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "help": {
+            "online": "http://www.bernnybot.co.za"
+          },
+          "url": "https://www.binaryspace.co.za/edubot/edubot-1.0.2.zip",
+          "archiveFileName": "edubot-1.0.2.zip",
+          "boards": [
+            {"name": "BennyBot"}
+          ],
+          "toolsDependencies": [
+	   {
+              "version": "6-2017-q1-update",
+              "name": "arm-none-eabi-gcc",
+              "packager": "STM32"
+            },
+            {
+              "version": "2017.7.13",
+              "name": "STM32Tools",
+              "packager": "STM32"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            }
+          ]
+        }
+	],
+      
+      "tools":[]
+    }
+  ]
+}
