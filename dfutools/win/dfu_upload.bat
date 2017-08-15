@@ -13,5 +13,5 @@ set str1=%str1:/=\%
 set str2=%2
 set str2=%str2:/=\%
 
-dfu_commandline %str1% %str2%
+dfucmd %str1% %str2%
 dfusecommand -c -d --fn %str2%
